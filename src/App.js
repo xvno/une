@@ -57,6 +57,7 @@ const App = ({ signOut }) => {
     return (
         <View className="App">
             <Heading level={1}>My Notes App</Heading>
+            <Button onClick={signOut}>Sign Out</Button>
             <View as="form" margin="3rem 0" onSubmit={createNote}>
                 <Flex direction="row" justifyContent="center">
                     <TextField
@@ -102,7 +103,7 @@ const App = ({ signOut }) => {
                     </Flex>
                 ))}
             </View>
-            <Button onClick={signOut}>Sign Out</Button>
+            
         </View>
     );
 };
